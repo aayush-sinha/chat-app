@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		829CC3AB2CF5820400E90937 /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = 829CC3AA2CF5820400E90937 /* StreamChat */; };
+		829CC3AD2CF5820400E90937 /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 829CC3AC2CF5820400E90937 /* StreamChatUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		829CC3912CF581E300E90937 /* AppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829CC3AD2CF5820400E90937 /* StreamChatUI in Frameworks */,
+				829CC3AB2CF5820400E90937 /* StreamChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = AppTest;
 			packageProductDependencies = (
+				829CC3AA2CF5820400E90937 /* StreamChat */,
+				829CC3AC2CF5820400E90937 /* StreamChatUI */,
 			);
 			productName = AppTest;
 			productReference = 829CC3912CF581E300E90937 /* AppTest.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = 829CC3882CF581E300E90937;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				829CC3A92CF5820400E90937 /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 829CC3922CF581E300E90937 /* Products */;
 			projectDirPath = "";
@@ -150,7 +162,6 @@
 				INFOPLIST_FILE = AppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +189,6 @@
 				INFOPLIST_FILE = AppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +345,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		829CC3A92CF5820400E90937 /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.67.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		829CC3AA2CF5820400E90937 /* StreamChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 829CC3A92CF5820400E90937 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChat;
+		};
+		829CC3AC2CF5820400E90937 /* StreamChatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 829CC3A92CF5820400E90937 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 829CC3892CF581E300E90937 /* Project object */;
 }
